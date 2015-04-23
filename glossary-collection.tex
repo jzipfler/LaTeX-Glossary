@@ -1,0 +1,32 @@
+%Here, the entries for the glossary are defined.
+%They will only appear, if they get used in the document,
+%so it is possible, to include the glossary in every document you want to.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% USAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Include this after the package "hyperref" to have clickable links.
+%Include it as following in your tex document preamble:
+	%\usepackage[toc]{glossaries}
+	%\makeglossaries
+	%\loadglsentries{content/99_Glossary}
+%toc:
+	%Shows up the glossary in your TableOfContent
+
+%Use the following settings to print the glossary and set its
+%name and the entry in the toc:
+	%\printglossary[title=Glossar,toctitle=Glossar]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ACRONYMS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{acronyms/acronyms}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GLOSSARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{glossary/glossary_de}

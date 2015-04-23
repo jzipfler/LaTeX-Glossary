@@ -1,0 +1,204 @@
+%Here, the entries for the glossary are defined.
+%They will only appear, if they get used in the document,
+%so it is possible, to include the glossary in every document you want to.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% USAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Include this after the package "hyperref" to have clickable links.
+%Include it as following in your tex document preamble:
+	%\usepackage[toc]{glossaries}
+	%\makeglossaries
+	%\loadglsentries{content/99_Glossary}
+%toc:
+	%Shows up the glossary in your TableOfContent
+
+%Use the following settings to print the glossary and set its
+%name and the entry in the toc:
+	%\printglossary[title=Glossar,toctitle=Glossar]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN ACRONYMS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% A
+\newacronym{API}{API}{Application Programming Interface}
+
+% B
+% C
+\newacronym{cmpSCTP}{cmpSCTP}{concurrent multipath SCTP}
+\newacronym{CSMACD}{CSMA/CD}{Carrier Scence Multiple Access (with) Collision Detection}
+
+% D
+\newacronym{DOS}{DOS}{Denial of Service}
+\newacronym{DSN}{DSN}{Data Sequence Number}
+
+% E
+\newacronym{ECMP}{ECMP}{Equal Cost Multipath}
+
+% F
+\newacronym{FDDI}{FDDI}{Fiber Distributed Data Interface}
+
+% G
+% H
+\newacronym{HMAC}{HMAC}{Keyed-Hash Message Authentication Code}
+\newacronym{HTTP}{HTTP}{Hypertext Transfer Protocol}
+
+% I
+\newacronym{IANA}{IANA}{Internet Assigned Numbers Authority}
+\newacronym{IDS}{IDS}{Intrusion Detection Systems}
+\newacronym{IEEE}{IEEE}{Institute of Electrical and Electronics Engineers}
+\newacronym{IETF}{IETF}{Internet Engineering Task Force}
+\newacronym{IP}{IP}{Internet Protocol}
+\newacronym{ISDN}{ISDN}{Integrated Services Digital Network}
+\newacronym{ISO}{ISO}{International Organisation for Standardisation}
+\newacronym{ISUP}{ISUP}{ISDN User Part}
+\newacronym{ISP}{ISP}{Internet Service Provider}
+\newacronym{ITU}{ITU}{International Telecommunication Union}
+
+% J
+\newacronym{JSF}{JSF}{Java Server Faces}
+\newacronym{JSON}{JSON}{JavaScript Object Notation}
+\newacronym[see={[Glossar:]{JavaEnterpriseEdition}}]{JavaEE}{JavaEE}{Java Enterprise Edition\glsadd{JavaEnterpriseEdition}}
+
+% K
+% L
+\newacronym{LISP-protocol}{LISP}{Locator-ID-Seperator-Protocol}
+
+% M
+\newacronym{MPTCP}{MPTCP}{Multipath TCP}
+\newacronym{MTP}{MTP}{Message Transfer Part}
+\newacronym{MTU}{MTU}{Maximum Transfer Unit}
+
+% N
+\newacronym{NAT}{NAT}{Network Address Translation}
+\newacronym{NAPT}{NAPT}{Network Address Port Translation}
+\newacronym{NAT-PT}{NAT-PT}{Network Address Translation with Protocol Translation}
+
+% O
+\newacronym{OSI}{OSI}{Open Systems Interconnection}
+
+% P
+\newacronym{PDU}{PDU}{Protocol Data Unit}
+
+% Q
+% R
+\newacronym{RFC}{RFC}{Request for Comments}
+\newacronym{RTO}{RTO}{Retransmission Timeout}
+\newacronym{RTT}{RTT}{Round-Trip Time}
+
+% S
+\newacronym{SAP}{SAP}{Service Access Point}
+\newacronym{SCTP}{SCTP}{Stream Control Transmission Protocol}
+\newacronym{SDU}{SDU}{Service Data Unit}
+\newacronym{SIGTRAN}{SIGTRAN}{Signalling Transport}
+\newacronym{SHA1}{SHA1}{Secure Hash Algorithm Version 1}
+\newacronym{SIP}{SIP}{Session Initiation Protocol}
+\newacronym{SS7}{SS7}{Signalling System No. 7}
+\newacronym{SSH}{SSH}{Secure Shell}
+
+% T
+\newacronymro{TCP}{TCP}{Transmission Control Protocol}
+\newacronym{TCPIP}{TCP/IP}{Transmission Control Protocol over Internet Protocol}
+
+% U
+\newacronym{UDP}{UDP}{User Datagramm Protocol}
+\newacronym{URI}{URI}{Uniform Resource Identifier}
+\newacronym{URL}{URL}{Uniform Resource Locator}
+
+% V
+\newacronym{VoIP}{VoIP}{Voice over IP}
+
+% W
+% X
+\newacronym{XHTML}{XHTML}{Extensible Hypertext Markup Language}
+
+% Y
+% Z
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BEGIN GLOSSARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% A
+% B
+\newglossaryentry{BackingBean}
+{
+	name=Backing Bean, 
+	description={wird im Zusammenhang mit JavaServer Faces verwendet und bildet eine Java Klasse auf dem Server die durch das Verhalten von Komponenten auf der Weboberfläche beispielsweise mit Werten befüllt wird}
+}
+
+\newglossaryentry{Bug}
+{
+	name=Bug,
+	description={ist ein Fehler oder ein unerwünschtes Verhalten einer Software},
+	plural=Bugs
+}
+
+% C
+% D
+% E
+% F
+\newglossaryentry{ForkGit}{
+	name=Fork,
+	description={beschreibt in Git das kopieren eines Projektes. Dabei wird das daraus entstehende Projekt getrennt von dem Original weiterentwickelt}
+}
+
+% G
+\newglossaryentry{Git}{
+	name=Git,
+	description={ist ein Programm zur Versionsverwaltung von Quelltext}
+}
+
+% H
+% I
+% J
+\newglossaryentry{JavaException}{
+	name=Exception,
+	description={ist ein Fehler in einem Programm der durch den Programmierer oder eine unerlaubte Aktion ausgelöst und an übergeordnete Instanzen weitergeleitet wird. Diese kann an einer höheren Stelle gefangen und behandelt werden}
+}
+
+\newglossaryentry{JavaEnterpriseEdition}{
+	name=Java Enterprise Edition,
+	description={beschreibt eine Sammlung von Spezifikationen und Schnittstellen welche meist in einem Client-Server Szenario Serverseitig ausgeführt werden}
+}
+
+% K
+% L
+% M
+\newglossaryentry{Margin}{
+	name=Margin,
+	description={definiert den Abstand außerhalb eines Elements}
+}
+
+% N
+% O
+% P
+\newglossaryentry{Padding}{
+	name=Padding,
+	description={definiert den Abstand zwischen der grenze eines Elementes und dessen Inhalt}
+}
+
+\newglossaryentry{ProtoBuf}{
+	name=Protocol Buffer,
+	description={ist eine von Google zur Verfügung gestellte Bibliothek für den Austausch von Nachrichten über das Netzwerk}
+	plural=Protocol Buffers
+}
+
+% Q
+% R
+\newglossaryentry{Release}{
+	name=Release,
+	description={beschreibt eine abgeschlossene Softwareversion}
+}
+
+% S
+% T
+% U
+% V
+% W
+% X
+% Y
+% Z

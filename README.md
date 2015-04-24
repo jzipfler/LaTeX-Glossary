@@ -8,7 +8,7 @@ Include it as following in your TeX document preamble:
 ```latex
 \usepackage[toc]{glossaries}
 \makeglossaries
-\loadglsentries{content/99_Glossary}
+\loadglsentries{<PATH_TO_GLOSSARY_FILE>}
 ```
 * toc:
 	Shows up the glossary in your TableOfContent
@@ -18,12 +18,12 @@ Use the following settings to print the glossary and set its name and the name o
 \printglossary[title=Glossar,toctitle=Glossar]
 ```
 
-To include the glossaty itself, you need to import the file to you projects TeX file.
-This can be done with the *input* command.
-
+To include/print the glossaty itself, you need to call the *printglossary* command.
 ```latex
-\input{<PATH_TO_GLOSSARY_FILE>}
+\printglossary[title=Glossar,toctitle=Glossar]
 ```
+With the given options, you can specify the heading (defined as *title*) of the glossary and its name in the talbe of content (defined as *toctitle*).
+
 You can clone the git repository to a desired place, and link (or symlink), the file to your project to have it in this scope and up to date through git.
 
 For more information take a look at:
